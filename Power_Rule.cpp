@@ -32,13 +32,13 @@ int main() {
         
     long long coeff = atof(coeffString.c_str());
     float expo = atof(expoString.c_str());
-    
+
     cout << "Unconverted exponent: " << expoString << endl;
     cout << "Coefficient: " << coeff << endl;
     cout << "Converted Exponent: " << expo << endl; 
 
     long long newCoeff = coeff * expo; 
-    long long newExpo = expo - 1;
+    float newExpo = expo - 1;
 
-    cout << "Derivative is: " << newCoeff << "x^" << setprecision(3) << newExpo;   
+    cout << "Derivative is: " << newCoeff << "x^" << newExpo;   
 }
