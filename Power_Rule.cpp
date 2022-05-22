@@ -40,5 +40,6 @@ int main() {
     long long newCoeff = coeff * expo; 
     float newExpo = expo - 1;
 
-    cout << "Derivative is: " << newCoeff << "x^" << newExpo;   
+    //exponent rounded to 2 decimals
+    cout << "Derivative is: " << newCoeff << setprecision(2) "x^" << newExpo;   
 }
