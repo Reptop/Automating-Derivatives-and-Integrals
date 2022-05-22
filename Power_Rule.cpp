@@ -1,11 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <stdio.h>
-#include <cstring>
-#include <map>
-#include <chrono>
-#include <stack>
-#include <sstream>
 #include <iomanip>
 using namespace std;
 
@@ -33,8 +26,8 @@ int main()
         expoString.push_back(s[i]);
     }
 
-    long long coeff = atof(coeffString.c_str());
-    float expo = atof(expoString.c_str());
+    float coeff = std::stof(coeffString);
+    float expo = std::stof(expoString);
 
     cout << "Unconverted exponent: " << expoString << endl;
     cout << "Coefficient: " << coeff << endl;
