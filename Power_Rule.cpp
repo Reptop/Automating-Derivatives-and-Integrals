@@ -36,8 +36,8 @@ int main() {
     test >> coeff; 
     test1 >> expo;
 
-    cout << "Coefficient: " + coeff << endl;
-    cout << "Exponent: " + expo << endl; 
+    cout << "Coefficient: " << coeff << endl;
+    cout << "Exponent: " << expo << endl; 
 
     long long newCoeff = coeff * expo; 
     long long newExpo = expo - 1;
