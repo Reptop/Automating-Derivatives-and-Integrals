@@ -30,10 +30,10 @@ int main() {
         expoString.push_back(s[i]);
     }
         
-    cout << "Unconverted exponent: " << expoString << endl;
     long long coeff = atof(coeffString.c_str());
     float expo = atof(expoString.c_str());
-
+    
+    cout << "Unconverted exponent: " << expoString << endl;
     cout << "Coefficient: " << coeff << endl;
     cout << "Converted Exponent: " << expo << endl; 
 
