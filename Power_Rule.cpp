@@ -6,6 +6,7 @@
 #include <chrono>
 #include <stack>
 #include <sstream>
+#include <iomanip>      
 using namespace std; 
 
 int main() {
@@ -28,19 +29,16 @@ int main() {
     for (i = i + 2; i != s.length(); ++i) {
         expoString.push_back(s[i]);
     }
-    stringstream test(coeffString); 
-    stringstream test1(expoString); 
-
-    long long coeff = 0;
-    long long expo = 0;
-    test >> coeff; 
-    test1 >> expo;
+        
+    cout << "Unconverted exponent: " << expoString << endl;
+    long long coeff = atof(coeffString.c_str());
+    float expo = atof(expoString.c_str());
 
     cout << "Coefficient: " << coeff << endl;
-    cout << "Exponent: " << expo << endl; 
+    cout << "Converted Exponent: " << expo << endl; 
 
     long long newCoeff = coeff * expo; 
     long long newExpo = expo - 1;
 
-    cout << "Derivative is: " << newCoeff << "x^" << newExpo;   
+    cout << "Derivative is: " << newCoeff << "x^" << setprecision(3) << newExpo;   
 }
